@@ -15,10 +15,10 @@ def copy_file_with_file_log(initial_dir, destination_dir):
     if file_path:
         try:
             destination_path = os.path.join(destination_dir, os.path.basename(file_path))
-            shutil.copy(file_path, destination_path) # Copy the file to the destination path
+            shutil.copy(file_path, destination_path)  # Copy the file to the destination path
             print(f"File '{os.path.basename(file_path)}' copied successfully to '{destination_dir}'.")
         except Exception as e:
-            print("Error copying the file:", e)
+            raise FileNotFoundError("Error copying the file:", e)
 
 
 class ImportImages:

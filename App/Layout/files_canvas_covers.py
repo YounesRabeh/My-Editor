@@ -38,7 +38,8 @@ class FilesImages:
         else:
             raise NameError(f"{wanted_folder} is not a \"FILES\" folder in {self.project_name}")
 
-        print(len(self.FILE_LIST))
+        info = "|INFO| Ihe 'Images' folder has: " + str(len(self.FILE_LIST)) + " files"
+        print(f"\033[{36}m{info}\033[0m")  # Set the console color to Cyan
         image_list = []  # Temporary list to store the images (actual img)
         i, j, k = 0, 0, 0
 

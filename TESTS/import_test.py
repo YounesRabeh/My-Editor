@@ -8,7 +8,6 @@ def list_images_in_directory(directory):
     image_extensions = (".png", ".jpg", ".jpeg")
     image_files = [file for file in os.listdir(directory) if file.lower().endswith(image_extensions)]
     return image_files
-# TODO: add import capabilities
 
 def add_selected_images():
     selected_indices = images_listbox.curselection()

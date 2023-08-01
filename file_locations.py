@@ -54,10 +54,6 @@ def get_files_names(directory):
             files.append(item)
     return files
 
-
-
-
-
 APP_DIRECTORY = get_folder_path("App")
 DATA_DIRECTORY = get_folder_path_specific_dir("Data", APP_DIRECTORY)
 TEMPORARY_DIRECTORY = get_folder_path_specific_dir("_temp", DATA_DIRECTORY)
