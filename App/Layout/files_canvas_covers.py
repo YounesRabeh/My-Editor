@@ -50,13 +50,14 @@ class FilesImages:
             image_list.append(self.image)  # Add the image to the temporary list
             self.CANVAS.create_image(120 + j, 70 + i, image=self.image)
             if k == 3:
-                i = i + 140
-                j = 0
-                k = 0
+                i = i + 140  # Y-axis
+                j = 0        # X-axis
+                k = 0        # Row
                 self.NUM += 1
             else:
                 j += 240
                 k += 1
+        # TODO: not update --canvas (so big)
 
         # Assign the temporary image list to self.FILE_LIST after the loop has finished
         self.FILE_LIST = image_list

@@ -109,7 +109,7 @@ class UI:
         file_menu.add_command(label='Import', command=lambda: import_files("Images"))
         file_menu.add_command(label='Exit', command=_app.destroy)  # add a menu item to the menu
 
-    def create_canvas(self, parent, bg_color="red"):
+    def create_canvas(self, parent, bg_color="lightgrey"):
         canvas = tk.CTkCanvas(parent, bg=bg_color, width=self.file_tab_width, height=self.file_tab_height,
                               highlightthickness=0, relief="flat")
         canvas.pack(fill="both", expand=True)

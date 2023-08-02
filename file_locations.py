@@ -1,7 +1,5 @@
 import pathlib
 import os.path
-from tkinter import filedialog
-import shutil
 
 APPLICATION_DIRECTORY = os.path.abspath(os.path.dirname(__file__))
 
